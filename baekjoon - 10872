@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+int main(void)
+{
+    int p;
+    int result = 1;
+
+    scanf("%d", &p);
+    
+    for (int i=1; i<=p; i++)
+    {
+        result *= i;
+    }
+    printf("%d", result);
+}
