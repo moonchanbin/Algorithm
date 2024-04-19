@@ -7,14 +7,14 @@ int main()
 	int a, b, c, d;
 	int bm, bj;
 	int i=2;
-	
+
 	scanf("%d %d", &a, &b);
 	scanf("%d %d", &c, &d);
-	
-	bunja = (a*d)+(b*c);
-	bunmo = b*d;
-	
-	while(i<=bunja && i<=bunmo)
+
+	bj = (a*d)+(b*c);
+	bm = b*d;
+
+	while(i<=bj && i<=bm)
 {
 		if((bj%i!=0)||(bm%i!=0))
     {
@@ -26,7 +26,7 @@ int main()
 			bm /= i;	
 		}
 }
-	
+
 	printf("%d %d", bj, bm);
-	
+
 }
