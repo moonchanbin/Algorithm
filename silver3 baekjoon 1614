@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main()
+{
+    long long f=0;
+    long long num=0; 
+   
+    scanf("%lld %lld", &f, &num);
+    
+    long long count = 0;
+    
+    if (f==1)
+    {
+        count=num * 8;
+    }   
+    else if (f==5)
+    {
+        count=num * 8 + 4;
+    }  
+    else if (f==3)
+    {
+        count=num * 4 + 2;
+    }
+    else if (f==2)
+    {
+        if (num%2 == 0)
+        {
+            count=num * 4 + 1;
+        }
+        if (num%2 != 0)
+        {
+            count=num * 4 + 3;
+        }
+    }
+
+    else {
+        if (num %2 == 0)
+            count=num * 4 + 3;
+        if (num %2 != 0)
+            count=num * 4 + 1;
+    }
+
+    printf("%lld", count);
+}
