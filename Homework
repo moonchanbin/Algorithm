@@ -1,0 +1,32 @@
+// baekjoon 1735번
+
+#include <stdio.h>
+
+int main()
+{
+	int a, b, c, d;
+	int bm, bj;
+	int i=2;
+	
+	scanf("%d %d", &a, &b);
+	scanf("%d %d", &c, &d);
+	
+	bunja = (a*d)+(b*c);
+	bunmo = b*d;
+	
+	while(i<=bunja && i<=bunmo)
+{
+		if((bj%i!=0)||(bm%i!=0))
+    {
+			i++;
+		}
+		else
+    {
+			bj /= i;
+			bm /= i;	
+		}
+}
+	
+	printf("%d %d", bj, bm);
+	
+}
